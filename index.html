@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+    
+    <div class="game-wrapper container mt-5">
+        <h1 class="mb-4">Simon Game</h1>
+        <div id="game-container" class="d-grid gap-3">
+            <div id="green" class="button green"></div>
+            <div id="red" class="button red"></div>
+            <div id="yellow" class="button yellow"></div>
+            <div id="blue" class="button blue"></div>
+        </div>
+
+
+        <div class="game-controls mt-4">
+            <div class="difficulty-selector mb-3">
+                <label class="mr-2">Difficulty:</label>
+                <select id="difficulty-level" class="custom-select">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <button id="start-button" class="btn btn-primary mb-3">Start Game</button>
+            <div class="game-stats">
+                <div id="score" class="mb-2">Score: <span id="current-score">0</span></div>
+                <div id="high-score">High Score: <span id="best-score">0</span></div>
+            </div>
+        </div>
+        <div id="game-message" class="message mt-4"></div>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="green-sound" src="sounds/green.mp3"></audio>
+    <audio id="red-sound" src="sounds/red.mp3"></audio>
+    <audio id="yellow-sound" src="sounds/yellow.mp3"></audio>
+    <audio id="blue-sound" src="sounds/blue.mp3"></audio>
+    <audio id="wrong-sound" src="sounds/gameover.mp3"></audio>
+
+    <!-- Including Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
