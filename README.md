@@ -43,8 +43,17 @@ A classic memory game where players must repeat an increasingly complex sequence
 - Ensure sound files are present in `sounds/` directory
 - Check browser console for any error messages
 
-## License
-MIT License
+# Simon Game
+
+A simple Simon game built with Bootstrap and vanilla JavaScript.
+
+## Live Demo
+
+[Play the game here]   (https://pawankalayan6899.github.io/simongame/)
+
+## Screencast
+
+[Watch the video](https://drive.google.com/file/d/1U_or9G72jab6I3QFLN05-FUjmtG9biqh/view?usp=drive_link)
 
 ## Created By
 Pavan Kalyan D
